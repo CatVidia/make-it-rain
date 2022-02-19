@@ -3,14 +3,22 @@
   <head>
     <title>eyes</title>
     <script>
+      
       let rain=0;
-      // 0... 10, 20, 30, 40, 50
-
+      // 0... 10, 20, 30, 40, 50 //
+      
       function makeItRain() {
-        let rainMeter = document.querySelector('span');
-
-        rainMeter.textContent = 100;
+        let rainMeter = document.querySelector('span')
+        
+        if(rain<=100) {
+         rain = rain+10
+        }        
+                
+        rainMeter.textContent = rain;
       }
+     
+      
+      //increase (makeItRain) by 10//
 /*
      ___(|)\
     /    \ \
@@ -22,6 +30,7 @@
     </script>
   </head>
   <body>
+    
     <h1>Hello</h1>
     <h2>totally awesome page</h2>
     <p>
